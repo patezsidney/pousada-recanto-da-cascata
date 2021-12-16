@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Container } from "../../../styles/components/headerMenuStyles"
+import { Button, Container } from "../../../styles/components/headerMenuStyles"
 
 export const HeaderMenu = () => {
   return (
@@ -32,7 +32,7 @@ export const HeaderMenu = () => {
         </li>
         <li>
           <a href="https://api.whatsapp.com/send?phone=5519997647592" target='_blank'>
-            <button>Reserva</button>
+            <Button>Reserva</Button>
           </a>
         </li>
 

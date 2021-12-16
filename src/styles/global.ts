@@ -18,7 +18,8 @@ export default createGlobalStyle`
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-position: center
+    background-position: center;
+    font-family: ${props => props.theme.fontFamilys.paragraph};
   }
 
   p {
@@ -27,5 +28,13 @@ export default createGlobalStyle`
 
   h1 {
     font-family: ${props => props.theme.fontFamilys.decorated}
+  }
+  ul {
+    list-style: none;
+  }
+  button {
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
   }
 `
