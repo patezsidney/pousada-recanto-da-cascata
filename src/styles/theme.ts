@@ -1,3 +1,5 @@
+import imagens from "../assets/images"
+
 const theme = {
   colors: {
     transparent: "transparent",
@@ -44,6 +46,10 @@ const theme = {
   breakpoints: {
     mobile: 0,
     desktop: 800
+  },
+  images: {
+    background: imagens.background,
+    logo: imagens.logo
   }
 }
 

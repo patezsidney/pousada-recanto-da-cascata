@@ -1,18 +1,15 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
+import { Header } from '../components/header'
 
 const Home: NextPage = () => {
   return (
     <div>
       <Head>
-
+        <title>Pousada Recanto da Cascata - Inicio</title>
       </Head>
-      <h1>Cascata</h1>
-      <a href="#">Meu link diferente</a>
-      <Link href="/teste" >
-        <button> Página de teste</button>
-      </Link>
+      <Header/>
     </div>
   )
 }

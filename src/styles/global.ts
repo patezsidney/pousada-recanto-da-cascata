@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import imagens from '../assets/images'
 
 export default createGlobalStyle`
   * {
@@ -13,7 +14,11 @@ export default createGlobalStyle`
   }
 
   body {
-    background: ${props => props.theme.colors.white}
+    background-image: url('./background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center
   }
 
   p {
