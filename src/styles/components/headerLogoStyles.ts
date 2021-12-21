@@ -4,6 +4,10 @@ export const Container = styled.div`
   color:  ${props => props.theme.colors.white};
   text-align: center;
   padding: 60px 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
 
   #pousada {
