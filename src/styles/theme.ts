@@ -48,8 +48,8 @@ const theme = {
     desktop: 800
   },
   images: {
-    background: imagens.background,
-    logo: imagens.logo
+    background: './assets/images/background.jpg',
+    logo: ''
   }
 }
 
