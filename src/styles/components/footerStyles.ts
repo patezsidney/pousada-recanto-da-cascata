@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.footer`
   width: 100%;
-  height: 350px;
+  height: fit-content;
   background-color: ${props => props.theme.colors.primary};
   padding-top: 20px;
   color: ${props => props.theme.colors.white};
@@ -13,6 +13,10 @@ export const Container = styled.footer`
     padding: 10px;
     color: white;
     font-size: 0.8rem;
+  }
+
+  @media (min-width: 700px) {
+    height: 350px;
   }
 `
 export const Content = styled.div`
@@ -33,6 +37,8 @@ export const Content = styled.div`
   }
 
   .social {
+    margin: 30px 0;
+
     button {
       width: 100%;
       margin: 10px 0;
@@ -58,6 +64,12 @@ export const Content = styled.div`
 
   iframe {
     border: none;
+  }
+
+  @media (min-width: 700px) {
+    .social {
+      margin: unset;
+    }
   }
 `
 

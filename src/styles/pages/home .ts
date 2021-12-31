@@ -11,14 +11,16 @@ export const Container = styled.div`
 `
 
 export const Content = styled.main`
+  width: 100vw;
   max-width: 1280px;
   margin: 0 auto;
 `
 
 export const SingleCard = styled.section`
   width: 100%;
-  height: 350px;
+  height: fit-content;
   display: flex;
+  flex-direction: column;
 
   background-color: ${props => props.theme.colors.white};
 
@@ -51,12 +53,13 @@ export const SingleCard = styled.section`
   }
 
   div {
-    width: 50%;
+    width: 100%;
   }
 
   .cardImage {
-    width: 50%;
-    height: 100%;
+    width: 100%;
+    height: 100vw;
+    max-height: 400px;
     background-color: lightgray;
     background-repeat: no-repeat;
     background-size: cover;
@@ -69,16 +72,32 @@ export const SingleCard = styled.section`
   #hidroInterna {
     background-image: url('./assets/images/hidro_interna-2.jpg')
   }
+
+  @media (min-width: 700px) {
+    flex-direction: row;
+    height: 350px;
+
+    div {
+      width: 50%;
+    }
+
+    .cardImage {
+      width: 50%;
+      height: 100%;
+      max-height: unset;
+    }
+
+  }
 `
 
 export const ReverseCard = styled.section`
   width: 100%;
-  height: 350px;
+  height: fit-content;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
 
   div {
-    width: 50%;
+    width: 100%;
   }
 
   h2 {
@@ -116,8 +135,9 @@ export const ReverseCard = styled.section`
   }
 
   .cardImage {
-    width: 50%;
-    height: 100%;
+    width: 100%;
+    height: 100vw;
+    max-height: 400px;
     background-color: lightgray;
     background-repeat: no-repeat;
     background-size: cover;
@@ -130,10 +150,26 @@ export const ReverseCard = styled.section`
   #cidade {
     background-image: url('./assets/images/cidade-1.jpg')
   }
+
+  @media (min-width: 700px) {
+    height: 350px;
+
+  flex-direction: row-reverse;
+    div {
+      width: 50%;
+    }
+
+    .cardImage {
+      width: 50%;
+      height: 100%;
+      max-height: unset;
+    }
+  }
 `
 
 export const Banner = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   width: 100%;
@@ -147,5 +183,9 @@ export const Banner = styled.div`
   :hover{
     background-color: ${props => props.theme.colors.secondaryHover};
 
+  }
+
+  @media (min-width: 700px) {
+    flex-direction: row;
   }
 `

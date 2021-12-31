@@ -3,7 +3,10 @@ import styled from "styled-components";
 
 export const Container = styled.nav`
 
-  background-color: rgba(255, 255, 255, 0.15);
+  display: none;
+
+  @media (min-width: 700px) {
+    background-color: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(5px);
   border-radius: 0 0 5px 5px;
   padding: 20px 25px;
@@ -27,6 +30,7 @@ export const Container = styled.nav`
     }
 
 
+  }
   }
 `
 export const Button = styled.button`
