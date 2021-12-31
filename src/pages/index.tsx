@@ -6,6 +6,7 @@ import { Banner, Container, Content, ReverseCard, SingleCard } from '../styles/p
 import { FaWhatsapp } from 'react-icons/fa'
 import Image from 'next/image'
 import imagens from '../assets/images'
+import { Footer } from '../components/footer'
 
 const Home: NextPage = () => {
   return (
@@ -71,7 +72,7 @@ const Home: NextPage = () => {
           </div>
         </ReverseCard>
       </Content>
-
+    <Footer/>
     </Container>
   )
 }
