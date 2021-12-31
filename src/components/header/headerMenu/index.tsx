@@ -1,33 +1,37 @@
 import Link from "next/link"
+import { useRouter } from "next/router"
 import { Button, Container } from "../../../styles/components/headerMenuStyles"
 
 export const HeaderMenu = () => {
+
+  const {route} = useRouter()
+
   return (
     <Container>
       <ul>
         <li>
           <Link href="/">
-            <a>Inicio</a>
+            <a className={route == '/' ? 'active' : 'default'} >Inicio</a>
           </Link>
         </li>
         <li>
           <Link href="/acomodacoes">
-            <a>Acomodações</a>
+            <a className={route == '/acomodacoes' ? 'active' : 'default'} >Acomodações</a>
           </Link>
         </li>
         <li>
           <Link href="/a-pousada">
-            <a>A Pousada</a>
+            <a className={route == '/a-pousada' ? 'active' : 'default'} >A Pousada</a>
           </Link>
         </li>
         <li>
           <Link href="/cidade">
-            <a>Cidade</a>
+            <a className={route == '/cidade' ? 'active' : 'default'} >Cidade</a>
           </Link>
         </li>
         <li>
           <Link href="/contato">
-            <a>Contato</a>
+            <a className={route == '/contato' ? 'active' : 'default'} >Contato</a>
           </Link>
         </li>
         <li>
