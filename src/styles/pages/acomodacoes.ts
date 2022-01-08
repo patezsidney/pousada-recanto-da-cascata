@@ -29,16 +29,15 @@ export const Content = styled.main`
     width: 100%;
   }
 
-  .carrosselTitle {
+  .carouselTitle {
     width: 100%;
     align-self: center;
   }
 
-  .carrossel {
+  .carousel {
     width: 100%;
     height: 100vw;
     max-height: 400px;
-    background-color: lightgray;
   }
 
   @media (min-width: 700px) {
@@ -53,12 +52,12 @@ export const Content = styled.main`
         flex-direction: row;
       }
     }
-    .carrosselTitle {
+    .carouselTitle {
       width: 50%;
       height: 100%;
     }
 
-    .carrossel {
+    .carousel {
       width: 50%;
     }
   }
