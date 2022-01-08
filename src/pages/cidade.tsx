@@ -1,7 +1,11 @@
+import { Masonry } from "@mui/lab"
+import { Stack } from "@mui/material"
 import Head from "next/head"
 import { Footer } from "../components/footer"
 import { Header } from "../components/header"
 import { Container, Content } from "../styles/pages/cidade"
+import imagens from "../assets/images"
+import Image from "next/image"
 
 
 const Cidade = () => {
@@ -21,7 +25,15 @@ const Cidade = () => {
           <p>Dentre as atrações e pontos turísticos estão as famosas águas radioativas que foram para a lua, belezas naturais e também o ecoturismo.</p>
         </section>
         <section>
-          <div id="carrossel"></div>
+          <div id="masonry">
+          <Masonry columns={{xs: 2, sm: 3}} spacing={2}>
+            {imagens.cidade.map((imageOnList, index) => (
+              <Stack key={index} >
+                  <Image src={imageOnList} objectFit="cover" loading="lazy"/>
+              </Stack>
+            ))}
+          </Masonry>
+          </div>
         </section>
       </Content>
 

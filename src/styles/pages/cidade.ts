@@ -25,11 +25,8 @@ export const Content = styled.main`
     margin: 0 auto;
   }
 
-  #carrossel {
-    width: 90%;
-    height: 200px;
-    margin: 20px auto;
-    background-color: lightgray;
+  #masonry {
+    margin-top: 40px;
   }
 
   @media (min-width: 700px) {
