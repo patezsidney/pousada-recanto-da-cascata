@@ -7,11 +7,14 @@ import imagens from "../assets/images";
 import { useState } from "react";
 import Image from "next/image";
 import { Stack } from "@mui/material";
+import { ImageModal } from "../components/imageModal";
 
 const APousada = () => {
 
   const [imagesList, setImagesList] = useState(imagens.geral)
   const [showButton, setShowButton] = useState(true)
+  const [showModal, setShowModal] = useState(false)
+  const [indexOnModalOpen, setIndexOnModalOpen] = useState(0)
 
   const showAllImages = () => {
     let list = [
@@ -25,11 +28,22 @@ const APousada = () => {
     setShowButton(false)
   }
 
+  const closeModal = () => {
+    setShowModal(false)
+    setIndexOnModalOpen(0)
+  }
+
+  const openModal = (imageIndex: number) => {
+    setIndexOnModalOpen(imageIndex)
+    setShowModal(true)
+  }
+
   return (
     <div>
       <Head>
       <title>Pousada Recanto da Cascata - A Pousada</title>
       </Head>
+      <ImageModal imageList={imagesList} isOpen={showModal} openIndex={indexOnModalOpen} handleClose={closeModal} />
       <Header/>
       <Content>
         <section>
@@ -40,8 +54,8 @@ const APousada = () => {
         <section>
           <Masonry columns={{xs: 2, sm: 3}} spacing={2}>
             {imagesList.map((imageOnList, index) => (
-              <Stack key={index}>
-                <Image src={imageOnList} objectFit="cover" loading="lazy"/>
+              <Stack key={index} onClick={() => openModal(index)}>
+                  <Image src={imageOnList} objectFit="cover" loading="lazy"/>
               </Stack>
             ))}
           </Masonry>

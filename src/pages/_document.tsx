@@ -41,7 +41,6 @@ export default class MyDocument extends Document {
           rel="stylesheet"
         />
 
-        <title>Recanto da Cascata</title>
       </Head>
 			<body>
 				<Main />
