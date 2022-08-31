@@ -35,9 +35,6 @@ export const HeaderMenu = () => {
           </Link>
         </li>
         <li>
-          {/* <a href="https://api.whatsapp.com/send?phone=5519997647592" target='_blank'>
-            <Button>Reserva</Button>
-          </a> */}
           <a href="https://reservations.fasthotel.com.br/169/195" target='_blank'>
             <Button>Reserva</Button>
           </a>
