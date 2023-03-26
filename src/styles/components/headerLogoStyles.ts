@@ -51,3 +51,20 @@ export const Title = styled.h1`
   }
   }
 `
+
+export const Button = styled.button`
+  padding: 12px 5rem;
+  color: ${props => props.theme.colors.white};
+  background-color: ${props => props.theme.colors.primary};
+  text-shadow: 0px 0px 3px ${props => props.theme.colors.black};
+  font-weight: bold;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 5px;
+  transition: all .2s linear;
+  margin-top: 2rem;
+
+  :hover {
+    background-color: ${props => props.theme.colors.primaryHover};
+  }
+`

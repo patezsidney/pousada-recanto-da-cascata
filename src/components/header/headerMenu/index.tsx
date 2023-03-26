@@ -36,7 +36,7 @@ export const HeaderMenu = () => {
         </li>
         <li>
           <a href="https://reservations.fasthotel.com.br/169/195" target='_blank'>
-            <Button>Reserva</Button>
+            <Button>Reservar</Button>
           </a>
         </li>
 
