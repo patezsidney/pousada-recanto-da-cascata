@@ -1,5 +1,5 @@
 import Head from "next/head"
-import { FaEnvelope, FaPhoneAlt, FaWhatsapp } from "react-icons/fa"
+import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa"
 import { Footer } from "../components/footer"
 import { Header } from "../components/header"
 import { Content } from "../styles/pages/contato"
@@ -22,10 +22,6 @@ const Contato = () => {
           <div>
             <FaWhatsapp/>
             <a href="https://api.whatsapp.com/send?phone=5519997647592">(19) 99764-7592</a>
-          </div>
-          <div>
-            <FaEnvelope/>
-            <a href="mailto:pousadarecantodacascata@hotmail.com">pousadarecantodacascata@hotmail.com</a>
           </div>
 
         </section>
