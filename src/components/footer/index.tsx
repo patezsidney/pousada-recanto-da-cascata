@@ -1,7 +1,19 @@
+import { useEffect, useState, useRef } from "react"
 import { FaInstagram } from "react-icons/fa"
 import { Container, Content, Logo } from "../../styles/components/footerStyles"
+import { TextModal } from "../textModal" 
 
 export const Footer = () => {
+  const [showModal, setShowModal] = useState(false)
+
+  const closeModal = () => {
+    setShowModal(false)
+  }
+
+  const openModal = () => {
+    setShowModal(true)
+  }
+
   return (
     <Container>
       <Content>
@@ -38,7 +50,13 @@ export const Footer = () => {
         </div>
       </Content>
       <div id="direitos">
-        <p>© 2021 Pousada Recanto da Cascata. Todos os direitos reservados.</p>
+        <p>© 2021 Pousada Recanto da Cascata. Todos os direitos reservados. <a onClick={() => openModal()}>Políticas</a></p>
+        <TextModal 
+          isOpen={showModal} 
+          title="Política de cancelamento:" 
+          content="Você pode efetuar o cancelamento gratuitamente até 14 dias antes da chegada. Haverá a cobrança de 50% de preço total em caso de cancelamento nos 14 dias anteriores à chegada. Em caso de não comparecimento, haverá a cobrança do preço total da reserva." 
+          handleClose={closeModal} 
+        ></TextModal>
       </div>
     </Container>
   )

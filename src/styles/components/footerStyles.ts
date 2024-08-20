@@ -13,6 +13,15 @@ export const Container = styled.footer`
     padding: 10px;
     color: white;
     font-size: 0.8rem;
+
+    a {
+      color: white;
+
+    }
+    a:hover {
+      font-weight: bold;
+      cursor: pointer;
+    }
   }
 
   @media (min-width: 700px) {
