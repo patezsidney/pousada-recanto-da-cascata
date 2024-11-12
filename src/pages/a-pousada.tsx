@@ -4,21 +4,22 @@ import { Header } from "../components/header"
 import { Button, Content } from "../styles/pages/a-pousada"
 import Masonry from '@mui/lab/Masonry';
 import imagens from "../assets/images";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Stack } from "@mui/material";
 import { ImageModal } from "../components/imageModal";
 
 const APousada = () => {
 
-  const [imagesList, setImagesList] = useState(imagens.geral)
+  const [generalImagesList, setGeneralImagesList] = useState<StaticImageData[]>([])
+  const [imagesList, setImagesList] = useState<StaticImageData[]>([])
   const [showButton, setShowButton] = useState(true)
   const [showModal, setShowModal] = useState(false)
   const [indexOnModalOpen, setIndexOnModalOpen] = useState(0)
 
   const showAllImages = () => {
     let list = [
-      ...imagens.geral,
+      ...generalImagesList,
       ...imagens.hidroExterna,
       ...imagens.hidroInterna,
       ...imagens.suiteLuxo,
@@ -37,6 +38,16 @@ const APousada = () => {
     setIndexOnModalOpen(imageIndex)
     setShowModal(true)
   }
+
+  useEffect(() => {
+    setGeneralImagesList(imagens.geral.sort(() => Math.random() - 0.5))
+    setImagesList(generalImagesList.slice(0, 30))
+  }, [])
+
+  useEffect(() => {
+    setImagesList(generalImagesList.slice(0, 30))
+  }, [generalImagesList])
+  
 
   return (
     <div>
