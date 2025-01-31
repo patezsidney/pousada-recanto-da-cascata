@@ -72,7 +72,7 @@ export const StyledDrawer = styled(Drawer)`
 export const Button = styled.button`
   padding: 12px 24px;
   color: ${props => props.theme.colors.white};
-  background-color: ${props => props.theme.colors.secondary};
+  background-color: ${props => props.theme.colors.primary};
   text-shadow: 0px 0px 3px ${props => props.theme.colors.black};
   font-weight: bold;
   font-size: 1.5rem;
@@ -81,6 +81,6 @@ export const Button = styled.button`
   transition: all .2s linear;
 
   :hover {
-    background-color: ${props => props.theme.colors.secondaryHover};
+    background-color: ${props => props.theme.colors.primaryHover};
   }
 `

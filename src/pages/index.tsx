@@ -7,8 +7,10 @@ import { FaWhatsapp } from 'react-icons/fa'
 import Image from 'next/image'
 import imagens from '../assets/images'
 import { Footer } from '../components/footer'
+import { useState } from 'react'
 
 const Home: NextPage = () => {
+
   return (
     <Container>
       <Head>

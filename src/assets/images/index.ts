@@ -6,7 +6,7 @@ import cidade from "./cidade";
 import geral from "./geral";
 
 import Logo from './LOGO_recanto-das-cascatas.png'
-import Background from './background.jpg'
+import Background from './background.jpeg'
 
 const imagens = {
   logo: Logo,

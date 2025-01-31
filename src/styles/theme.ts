@@ -1,4 +1,3 @@
-import imagens from "../assets/images"
 
 const theme = {
   colors: {
@@ -48,7 +47,7 @@ const theme = {
     desktop: 800
   },
   images: {
-    background: './assets/images/background.jpg',
+    background: './assets/images/background.jpeg',
     logo: ''
   }
 }

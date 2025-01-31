@@ -173,7 +173,7 @@ export const Banner = styled.div`
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  background-color: ${props => props.theme.colors.secondary};
+  background-color: ${props => props.theme.colors.primary};
   color: ${props => props.theme.colors.white};
   font-weight: bold;
   text-shadow: 0px 0px 3px ${props => props.theme.colors.black};
@@ -181,7 +181,7 @@ export const Banner = styled.div`
   padding: 15px 0;
 
   :hover{
-    background-color: ${props => props.theme.colors.secondaryHover};
+    background-color: ${props => props.theme.colors.primaryHover};
 
   }
 

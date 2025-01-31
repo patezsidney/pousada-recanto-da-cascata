@@ -4,6 +4,7 @@ export const ModalContainer = styled.div`
   width: fit-content;
   display: flex;
   flex-direction: column;
+  border: none;
 
   #closeModal {
     cursor: pointer;
@@ -54,6 +55,7 @@ export const ModalContent = styled.div`
   max-width: 90vw;
   max-height: 90vh;
   position: relative;
+  border: none;
 
   svg {
     width: 60px;

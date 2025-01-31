@@ -68,3 +68,36 @@ export const Button = styled.button`
     background-color: ${props => props.theme.colors.primaryHover};
   }
 `
+
+export const PlayerButton = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  padding: 0.5rem 2rem;
+  color: ${props => props.theme.colors.white};
+  background-color: ${props => props.theme.colors.secondary};
+  text-shadow: 0px 0px 3px ${props => props.theme.colors.black};
+  font-weight: bold;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  transition: all .2s linear;
+  margin-top: 3rem;
+  border: none;
+
+  :hover {
+    background-color: ${props => props.theme.colors.secondaryHover};
+    cursor: pointer;
+  }
+
+  span {
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  svg {
+    color: ${props => props.theme.colors.white};
+  }
+
+`

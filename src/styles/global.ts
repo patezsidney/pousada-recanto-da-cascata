@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components'
-import imagens from '../assets/images'
 
 export default createGlobalStyle`
   * {
@@ -14,7 +13,7 @@ export default createGlobalStyle`
   }
 
   body {
-    background-image: url('./assets/images/background.jpg');
+    background-image: url('./assets/images/background.jpeg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
