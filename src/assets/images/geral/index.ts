@@ -52,7 +52,6 @@ import Pousada51 from './Pousada-51.jpeg'
 import Pousada52 from './Pousada-52.jpeg'
 import Pousada53 from './Pousada-53.jpeg'
 import Pousada54 from './Pousada-54.jpeg'
-import Pousada55 from './Pousada-55.jpeg'
 import Pousada56 from './Pousada-56.jpeg'
 import Pousada57 from './Pousada-57.jpeg'
 import Pousada58 from './Pousada-58.jpeg'
@@ -72,6 +71,18 @@ import Pousada71 from './Pousada-71.jpeg'
 import Pousada72 from './Pousada-72.jpeg'
 import Pousada73 from './Pousada-73.jpeg'
 import Pousada74 from './Pousada-74.jpeg'
+import Pousada75 from './Pousada-75.jpg'
+import Pousada76 from './Pousada-76.jpg'
+import Pousada77 from './Pousada-77.jpg'
+import Pousada78 from './Pousada-78.jpg'
+import Pousada79 from './Pousada-79.jpg'
+import Pousada80 from './Pousada-80.jpg'
+import Pousada81 from './Pousada-81.jpg'
+import Pousada82 from './Pousada-82.jpg'
+import Pousada83 from './Pousada-83.jpg'
+
+
+
 
 const geral = [
   Pousada1,
@@ -128,7 +139,6 @@ const geral = [
   Pousada52,
   Pousada53,
   Pousada54,
-  Pousada55,
   Pousada56,
   Pousada57,
   Pousada58,
@@ -147,7 +157,16 @@ const geral = [
   Pousada71,
   Pousada72,
   Pousada73,
-  Pousada74
+  Pousada74,
+  Pousada75,
+  Pousada76,
+  Pousada77,
+  Pousada78,
+  Pousada79,
+  Pousada80,
+  Pousada81,
+  Pousada82,
+  Pousada83,
 ]
 
 export default geral
