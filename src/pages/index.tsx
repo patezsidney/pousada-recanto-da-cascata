@@ -68,6 +68,18 @@ const Home: NextPage = () => {
           </div>
           <div className='cardImage' id='cidade'></div>
         </ReverseCard>
+        <SingleCard>
+          <div className='cardContent'>
+            <div>
+              <h2>Somos Pet Friendly</h2>
+              <p>Viaje com seu melhor amigo! Aqui seu pet é muito bem-vindo. Aproveite momentos de descanso e diversão em um ambiente tranquilo e acolhedor para toda a família!</p>
+              {/* <Link href="/a-pousada">
+                <button>Saiba mais</button>
+              </Link> */}
+            </div>
+          </div>
+          <div className='cardImage' id='pet'></div>
+        </SingleCard>
       </Content>
     <Footer/>
     </Container>

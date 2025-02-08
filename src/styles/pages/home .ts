@@ -72,6 +72,11 @@ export const SingleCard = styled.section`
   #hidroInterna {
     background-image: url('./assets/images/hidro_interna-2.jpg')
   }
+  
+  #pet {
+    background-image: url('./assets/images/pet.jpeg')
+  }
+
 
   @media (min-width: 700px) {
     flex-direction: row;
