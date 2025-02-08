@@ -3,6 +3,8 @@ import Image from "next/image"
 import { useEffect, useState } from "react"
 import { FaAngleLeft, FaAngleRight, FaTimes } from "react-icons/fa"
 import { ModalContainer, ModalContent } from "../../styles/components/imageModalStyles"
+import { styled } from '@mui/system';
+import { Backdrop } from "@mui/material"
 
 interface ImageModalProps {
   imageList: StaticImageData[],
@@ -10,6 +12,11 @@ interface ImageModalProps {
   isOpen: boolean,
   handleClose: () => void,
 }
+
+const StyledBackdrop = styled(Backdrop)(({ theme }) => ({
+  backgroundColor: 'rgba(0, 0, 0, 0.92)', // Ajuste a opacidade aqui
+}));
+
 
 export const ImageModal = ({imageList, openIndex, isOpen, handleClose}: ImageModalProps) => {
   const [showImage, setShowImage] = useState(openIndex)
@@ -33,6 +40,12 @@ export const ImageModal = ({imageList, openIndex, isOpen, handleClose}: ImageMod
       open={isOpen}
       onClose={handleClose}
       sx={{display: "flex", justifyContent: 'center', alignItems: 'center'}}
+      disableAutoFocus={true}
+      closeAfterTransition
+      BackdropComponent={StyledBackdrop}
+      BackdropProps={{
+        timeout: 500,
+      }}
     >
       <ModalContainer>
         <FaTimes id="closeModal" onClick={handleClose} />

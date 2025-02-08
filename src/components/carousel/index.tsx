@@ -16,10 +16,7 @@ export const CarouselComponent = ({imageList}: CarouselProps) => {
   const handleImage = () => {
     const listLength = imageList.length - 1
     const index = indexRef.current + 1
-    console.log("index",index)
     index > listLength ? setImageIndex(0) : setImageIndex(index)
-    // setImageIndex(index)
-    console.log(listLength)
   }
 
   const closeModal = () => {
@@ -33,8 +30,6 @@ export const CarouselComponent = ({imageList}: CarouselProps) => {
   useEffect(() => {
     setTimeout(handleImage, 10000)
   },[imageIndex])
-
-
 
   return (
     <Container>

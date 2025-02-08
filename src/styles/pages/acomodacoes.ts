@@ -25,19 +25,16 @@ export const Content = styled.main`
 
   section {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
-  }
-
-  .carouselTitle {
-    width: 100%;
-    align-self: center;
+    padding: 20px 0;
+    justify-content: center;
   }
 
   .carousel {
-    width: 100%;
-    height: 100vw;
-    max-height: 400px;
+    width: 90%;
+    height: 50vw;
+    max-height: 80vw;
   }
 
   @media (min-width: 700px) {
@@ -46,21 +43,39 @@ export const Content = styled.main`
     }
 
     section {
-      flex-direction: row-reverse;
+      flex-direction: row;
 
-      :nth-child(odd) {
-        flex-direction: row;
-      }
-    }
-    .carouselTitle {
-      width: 50%;
-      height: 100%;
     }
 
     .carousel {
-      width: 50%;
+      width: 90%;
+      height: 60vw;
     }
   }
 
+`
+
+export const Banner = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: ${props => props.theme.colors.primary};
+  color: ${props => props.theme.colors.white};
+  font-weight: bold;
+  text-shadow: 0px 0px 3px ${props => props.theme.colors.black};
+  font-size: 1.4rem;
+  padding: 15px 0;
+  margin-top: 15px;
+
+  :hover{
+    background-color: ${props => props.theme.colors.primaryHover};
+
+  }
+
+  // @media (min-width: 700px) {
+  //   flex-direction: column;
+  // }
 `
 
