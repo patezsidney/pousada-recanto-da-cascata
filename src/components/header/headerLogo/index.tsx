@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { FaPlayCircle } from "react-icons/fa";
-import { Button, Container, Title, PlayerButton } from "../../../styles/components/headerLogoStyles"
+import { Container, Title, PlayerButton } from "../../../styles/components/headerLogoStyles"
 import { VideoModal } from "../../videoModal"
 import { Icon } from "@mui/material"
 
