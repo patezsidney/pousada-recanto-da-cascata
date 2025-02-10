@@ -1,8 +1,8 @@
 import Link from "next/link"
-import {Drawer} from '@mui/material'
 import { useState } from "react"
-import { Container, StyledDrawer, Button } from "../../../styles/components/mobileHeaderMenu"
-import { FaBars, FaTimes } from "react-icons/fa"
+import { Container, StyledDrawer } from "../../../styles/components/mobileHeaderMenu"
+import { Button } from "@mui/material"
+import { FaBars, FaTimes, FaCalendarAlt } from "react-icons/fa"
 import { useRouter } from "next/router"
 
 export const MobileHeaderMenu = () => {
@@ -56,7 +56,18 @@ export const MobileHeaderMenu = () => {
           </li>
           <li>
             <a href="https://reservations.fasthotel.com.br/169/195" target='_blank'>
-              <Button>Reservar</Button>
+              <Button
+            variant="contained"
+            startIcon={<FaCalendarAlt />}
+            sx={{
+              "backgroundColor": "#199BB7", 
+              "&:hover": {"backgroundColor": "#137085"},
+              "fontWeight": "bold",
+              "fontSize": "1rem",
+            }}
+            >
+              Reservar
+            </Button>
             </a>
           </li>
         </ul>

@@ -42,7 +42,7 @@ export const Container = styled.nav`
     display: none;
   }
 `
-export const Button = styled.button`
+export const StyledButton = styled.button`
   padding: 12px 24px;
   color: ${props => props.theme.colors.white};
   background-color: ${props => props.theme.colors.primary};

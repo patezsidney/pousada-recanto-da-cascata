@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from "react"
+import { useState } from "react"
 import { FaInstagram } from "react-icons/fa"
 import { Container, Content, Logo } from "../../styles/components/footerStyles"
 import { TextModal } from "../textModal" 
@@ -38,7 +38,19 @@ export const Footer = () => {
               <p>Instagram</p>
             </button>
           </a>
+          <h3>Políticas e normas:</h3>
+          <a onClick={() => openModal()}>
+              <button>
+              <p>Políticas de cancelamento</p>
+            </button>
+          </a>
         </div>
+        <TextModal 
+          isOpen={showModal} 
+          title="Política de cancelamento:" 
+          content="Você pode efetuar o cancelamento gratuitamente até 14 dias antes da chegada. Haverá a cobrança de 50% de preço total em caso de cancelamento nos 14 dias anteriores à chegada. Em caso de não comparecimento, haverá a cobrança do preço total da reserva." 
+          handleClose={closeModal} 
+        ></TextModal>
         <div>
           <h3>Onde estamos:</h3>
           <iframe
@@ -50,13 +62,7 @@ export const Footer = () => {
         </div>
       </Content>
       <div id="direitos">
-        <p>© 2021 Pousada Recanto da Cascata. Todos os direitos reservados. <a onClick={() => openModal()}>Políticas</a></p>
-        <TextModal 
-          isOpen={showModal} 
-          title="Política de cancelamento:" 
-          content="Você pode efetuar o cancelamento gratuitamente até 14 dias antes da chegada. Haverá a cobrança de 50% de preço total em caso de cancelamento nos 14 dias anteriores à chegada. Em caso de não comparecimento, haverá a cobrança do preço total da reserva." 
-          handleClose={closeModal} 
-        ></TextModal>
+        <p>© 2021 Pousada Recanto da Cascata. Todos os direitos reservados.</p>
       </div>
     </Container>
   )

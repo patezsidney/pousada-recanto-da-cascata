@@ -1,10 +1,14 @@
 import Link from "next/link"
 import { useRouter } from "next/router"
-import { Button, Container } from "../../../styles/components/headerMenuStyles"
+import { FaCalendarAlt } from "react-icons/fa";
+import { Button } from "@mui/material";
+import { Container } from "../../../styles/components/headerMenuStyles"
+import { useTheme } from '@mui/material/styles';
 
 export const HeaderMenu = () => {
 
   const {route} = useRouter()
+  const theme = useTheme()
 
   return (
     <Container>
@@ -36,7 +40,18 @@ export const HeaderMenu = () => {
         </li>
         <li>
           <a href="https://reservations.fasthotel.com.br/169/195" target='_blank'>
-            <Button>Reservar</Button>
+            <Button
+            variant="contained"
+            startIcon={<FaCalendarAlt />}
+            sx={{
+              "backgroundColor": "#199BB7", 
+              "&:hover": {"backgroundColor": "#137085"},
+              "fontWeight": "bold",
+              "fontSize": "1rem",
+            }}
+            >
+              Reservar
+            </Button>
           </a>
         </li>
 
