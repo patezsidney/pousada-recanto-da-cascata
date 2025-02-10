@@ -3,12 +3,10 @@ import { useRouter } from "next/router"
 import { FaCalendarAlt } from "react-icons/fa";
 import { Button } from "@mui/material";
 import { Container } from "../../../styles/components/headerMenuStyles"
-import { useTheme } from '@mui/material/styles';
 
 export const HeaderMenu = () => {
 
   const {route} = useRouter()
-  const theme = useTheme()
 
   return (
     <Container>
