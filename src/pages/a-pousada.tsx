@@ -20,10 +20,7 @@ const APousada = () => {
   const showAllImages = () => {
     let list = [
       ...generalImagesList,
-      ...imagens.hidroExterna,
-      ...imagens.hidroInterna,
-      ...imagens.suiteLuxo,
-      ...imagens.triploVaranda
+      ...imagens.acomodacoes,
     ]
     setImagesList(list)
     setShowButton(false)

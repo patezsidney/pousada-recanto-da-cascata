@@ -1,7 +1,4 @@
-import carrosselHidroExterna from "./carrossel_hidro_externa";
-import carrosselHidroInterna from "./carrossel_hidro_interna";
-import carrosselTriploVaranda from "./carrossel_triplo_varanda";
-import carrosselSuiteLuxo from "./carrossel_suite_luxo";
+import carrosselAcomodacoes from "./acomodacoes";
 import cidade from "./cidade";
 import geral from "./geral";
 
@@ -11,10 +8,7 @@ import Background from './background.jpeg'
 const imagens = {
   logo: Logo,
   background: Background,
-  hidroExterna: carrosselHidroExterna,
-  hidroInterna: carrosselHidroInterna,
-  triploVaranda: carrosselTriploVaranda,
-  suiteLuxo: carrosselSuiteLuxo,
+  acomodacoes: carrosselAcomodacoes,
   cidade: cidade,
   geral: geral
 }

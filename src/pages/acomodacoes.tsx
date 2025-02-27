@@ -10,7 +10,6 @@ import { useState, useEffect } from "react"
 import { ImageModal } from "../components/imageModal";
 
 const Acomodacoes = () => {
-  const [generalImagesList, setGeneralImagesList] = useState<StaticImageData[]>([])
   const [imagesList, setImagesList] = useState<StaticImageData[]>([])
   const [showModal, setShowModal] = useState(false)
   const [indexOnModalOpen, setIndexOnModalOpen] = useState(0)
@@ -26,17 +25,7 @@ const Acomodacoes = () => {
   }
 
   useEffect(() => {
-    setImagesList(generalImagesList.slice(0, 30))
-  }, [generalImagesList])
-
-  useEffect(() => {
-    let list = [
-      ...imagens.hidroExterna,
-      ...imagens.hidroInterna,
-      ...imagens.suiteLuxo,
-      ...imagens.triploVaranda
-    ]
-    setImagesList(list.sort(() => Math.random() - 0.5))
+    setImagesList(imagens.acomodacoes.sort(() => Math.random() - 0.5))
   }, [])
 
   return (
