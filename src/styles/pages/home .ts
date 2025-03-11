@@ -70,7 +70,7 @@ export const SingleCard = styled.section`
     background-image: url('./assets/images/Pousada-1.jpg')
   }
   #hidroInterna {
-    background-image: url('./assets/images/hidro_interna-2.jpg')
+    background-image: url('./assets/images/Pousada-48.jpeg')
   }
   
   #pet {
@@ -150,7 +150,7 @@ export const ReverseCard = styled.section`
   }
 
   #hidroExterna {
-    background-image: url('./assets/images/hidro_externa-2.jpg')
+    background-image: url('./assets/images/triplo_varanda-3.jpeg')
   }
   #cidade {
     background-image: url('./assets/images/cidade-1.jpg')
