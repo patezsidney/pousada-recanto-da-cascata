@@ -3,8 +3,9 @@ import Cidade2 from './cidade-2.jpeg'
 import Cidade3 from './cidade-3.jpeg'
 import Cidade4 from './cidade-4.jpeg'
 import Cidade5 from './cidade-5.jpeg'
-import Cidade6 from './cidade-6.jpeg'
-import Cidade7 from './cidade-7.jpeg'
+import Antigos from './antigos.jpg'
+import Aquatico1 from './aquatico-1.jpg'
+import Aquatico2 from './aquatico-2.jpg'
 
 const cidade = [
   Cidade1,
@@ -12,8 +13,9 @@ const cidade = [
   Cidade3,
   Cidade4,
   Cidade5,
-  Cidade6,
-  Cidade7
+  Antigos,
+  Aquatico1,
+  Aquatico2
 ]
 
 export default cidade

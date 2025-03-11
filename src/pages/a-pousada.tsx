@@ -13,18 +13,8 @@ const APousada = () => {
 
   const [generalImagesList, setGeneralImagesList] = useState<StaticImageData[]>([])
   const [imagesList, setImagesList] = useState<StaticImageData[]>([])
-  const [showButton, setShowButton] = useState(true)
   const [showModal, setShowModal] = useState(false)
   const [indexOnModalOpen, setIndexOnModalOpen] = useState(0)
-
-  const showAllImages = () => {
-    let list = [
-      ...generalImagesList,
-      ...imagens.acomodacoes,
-    ]
-    setImagesList(list)
-    setShowButton(false)
-  }
 
   const closeModal = () => {
     setShowModal(false)
@@ -38,11 +28,11 @@ const APousada = () => {
 
   useEffect(() => {
     setGeneralImagesList(imagens.geral.sort(() => Math.random() - 0.5))
-    setImagesList(generalImagesList.slice(0, 30))
+    setImagesList(generalImagesList)
   }, [])
 
   useEffect(() => {
-    setImagesList(generalImagesList.slice(0, 30))
+    setImagesList(generalImagesList)
   }, [generalImagesList])
   
 
@@ -67,7 +57,6 @@ const APousada = () => {
               </Stack>
             ))}
           </Masonry>
-          {showButton && <Button onClick={showAllImages} >Ver todas as imagens</Button>}
         </section>
       </Content>
       <Footer/>
