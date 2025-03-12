@@ -14,7 +14,6 @@ import Pousada67 from './Pousada-67.jpeg'
 import Pousada76 from './Pousada-76.jpg'
 import Pousada77 from './Pousada-77.jpg'
 import Pousada78 from './Pousada-78.jpg'
-import SuiteLuxo1 from './suite_luxo-1.jpg'
 import SuiteLuxo2 from './suite_luxo-2.jpeg'
 import TriploVaranda1 from './triplo_varanda-1.jpeg'
 import TriploVaranda2 from './triplo_varanda-2.jpeg'
@@ -30,7 +29,6 @@ const carrosselAcomodacoes = [
   HidroInterna4,
   HidroInterna5,
   HidroInterna6,
-  SuiteLuxo1,
   SuiteLuxo2,
   TriploVaranda1,
   TriploVaranda2,
