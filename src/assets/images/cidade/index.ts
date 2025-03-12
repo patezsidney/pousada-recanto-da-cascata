@@ -13,6 +13,7 @@ import Cidade5 from './cidade-5.jpeg'
 import Cidade6 from './cidade-6.jpeg'
 import Cidade7 from './cidade-7.jpeg'
 import Cidade8 from './cidade-8.jpeg'
+import Cidade9 from './cidade-9.jpeg'
 
 
 const cidade = [
@@ -30,7 +31,8 @@ const cidade = [
   Cidade5,
   Cidade6,
   Cidade7,
-  Cidade8
+  Cidade8,
+  Cidade9
 ]
 
 export default cidade
