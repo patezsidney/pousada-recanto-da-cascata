@@ -24,7 +24,7 @@ const Home: NextPage = () => {
           <div className='cardContent'>
             <div>
               <h2>Paraíso no Interior</h2>
-              <p>Viva a incrível experiência de se sentir em casa em meio a natureza. Aproveite a paz, o aconchego e apenas relaxe. Esse paraíso está te esperando a apenas 180 km de São Paulo.</p>
+              <p>Viva a incrível experiência de se sentir em casa em meio a natureza. Aproveite a paz, o aconchego e apenas relaxe. Esse paraíso está te esperando a apenas 160 km de São Paulo.</p>
               <Link href="/a-pousada">
                 <button>Saiba mais</button>
               </Link>
