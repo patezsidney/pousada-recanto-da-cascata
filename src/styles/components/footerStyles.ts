@@ -24,9 +24,6 @@ export const Container = styled.footer`
     }
   }
 
-  @media (min-width: 700px) {
-    height: 350px;
-  }
 `
 export const Content = styled.div`
   width: 100%;

@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { FaInstagram } from "react-icons/fa"
+import { FaInstagram, FaTiktok, FaWhatsapp } from "react-icons/fa"
 import { Container, Content, Logo } from "../../styles/components/footerStyles"
 import { TextModal } from "../textModal" 
 
@@ -36,6 +36,18 @@ export const Footer = () => {
             <button>
               <FaInstagram/>
               <p>Instagram</p>
+            </button>
+          </a>
+          <a href="https://www.tiktok.com/@pousada_da_cascata">
+            <button>
+              <FaTiktok/>
+              <p>TikTok</p>
+            </button>
+          </a>
+          <a href="https://api.whatsapp.com/send?phone=5519997647592">
+            <button>
+              <FaWhatsapp/>
+              <p>WhatsApp</p>
             </button>
           </a>
           <h3>Políticas e normas:</h3>
